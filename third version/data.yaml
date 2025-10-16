@@ -1,0 +1,13 @@
+train: ./train/images
+val: ./val/images
+test: ./test/images
+
+nc: 1
+names: ['paddle']
+
+roboflow:
+  workspace: paddle-label
+  project: my-first-project-vxs3f
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/paddle-label/my-first-project-vxs3f/dataset/3

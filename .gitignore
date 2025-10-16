@@ -1,0 +1,56 @@
+# .gitignore for Dragon Boat Motion Analysis Project
+
+# Python
+
+pycache/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.env/
+.venv/
+.envrc
+
+# Jupyter and logs
+
+.ipynb_checkpoints/
+*.log
+
+# Dataset and outputs
+
+dataset/
+train/images/
+train/labels/
+val/
+*.mp4
+*.avi
+*.mov
+*.csv
+**.jpg
+**.txt
+outputs/
+runs/
+
+# IDE and OS files
+
+.vscode/
+.idea/
+**.DS_Store
+Thumbs.db
+
+# Temporary and backup
+
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Environment files
+
+requirements.lock
+pip-wheel-metadata/
