@@ -24,17 +24,15 @@ venv/
 # Dataset and outputs
 
 dataset/
-train/images/
-train/labels/
 val/
 *.mp4
 *.avi
 *.mov
 *.csv
 **.jpg
+**.png
 **.txt
 outputs/
-runs/
 
 # IDE and OS files
 
