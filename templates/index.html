@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>龍舟影片上傳與播放</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    video { margin-top: 20px; width: 80%; max-width: 720px; border-radius: 10px; background: #000; }
+  </style>
+</head>
+<body>
+  <h1>龍舟展示</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="video" accept="video/*" required>
+      <button type="submit">上傳並轉檔</button>
+  </form>
+
+  {% if video_path %}
+  <h2>轉檔完成！</h2>
+  <video controls preload="auto" playsinline>
+      <source src="{{ url_for('result_file', filename=video_path.split('/')[-1]) }}" type="video/mp4">
+      您的瀏覽器不支援影片播放。
+  </video>
+  {% endif %}
+</body>
+</html>
