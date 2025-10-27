@@ -1,0 +1,8 @@
+*.log
+venv/
+.env/
+.venv/
+*.mp4
+dataset/
+**.DS_Store
+
